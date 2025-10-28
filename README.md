@@ -28,7 +28,7 @@ MyWordle/
 |---- main.py                         # Entry point of the program
 |---- gui.py                          # Handles GUI layout, keyboard, and game logic
 |---- determineFeatures_loadData.py   # Loads data, constants, and word feedback logic
-|---- 5letter_words.txt               # Word dictionary (one 5-letter word per line)
+|---- music.py                        # Handles background tracks
 |---- README.md                       # How to run source code
 |---- requirements.txt                # Libraries to be installed
 |-- Report.pdf                        # Included demo video URLs
@@ -37,22 +37,30 @@ MyWordle/
 ## How to run
 ### 1. Install requirements
 **You need Python 3 installed on your machine.**
-- [How to install Python 3 on Windows](https://www.youtube.com/watch?v=0DQsjE8vMpc)
-- [How to enable Python 3 pip on Windows 10](https://www.youtube.com/watch?v=mFqdeX1C-8M)
-- [How to install Python 3 on MacOS](https://www.youtube.com/watch?v=3-sPfR4JEQ8)
+- For Windows and MacOS users, follow the link (https://www.python.org/downloads/)
 - [Installing Python on Linux](https://www.youtube.com/watch?v=4vb7KBCuHbA)
 **The program also need Tkinter library to be install.**
-To Windows and MacOS, Tkinter usually comes with the official Python installers from [python.org](https://www.python.org/).
-To Linux, follow the video [Install and Setup Tkinter for beginners](https://www.youtube.com/watch?v=5XdGmhryZBk) as a reference.
+1. Tkinter
+- To Windows and MacOS, Tkinter usually comes with the official Python installers.
+- To Linux, follow the video [Install and Setup Tkinter for beginners](https://www.youtube.com/watch?v=5XdGmhryZBk) as a reference.
+2. pygame
+Paste `pip install pygame` to Command Prompt or environment's terminal to install pygame library (the installed version is supposed to be ***pygame-2.6.1.tar.gz***). If any errors occur, make sure that:
+- The interpreter that you are using is Python 3.11.9 onwards (check the ***Settings*** section of your environment).
+- Check if `pip` is at the latest version. Use `pip install --upgrade pip` on Command Prompt to automatically check/upgrade.
 **Environment**
 As the author of the program, I highly recommend using PyCharm for running. However, other environments are also okay.
 ### 2. Installation
 1. Download the project
 Clone this repository or download the ZIP file and extract it to your desired location.
 `git clone https://github.com/jenia3003/Wordle`
+In case you clone the project from GitHub, data files (for word list and background music) are already stored in the repository.
 2. Get dictionary (optional)
-Click on link [Get Dictionaries](https://drive.google.com/drive/folders/1eWKkcYSyP5aMB6O2QrD_n11SmiLxbhdO?usp=sharing) and download `5letter_words.txt`. Then move the file to `Source` folder.
-3. Navigate to the project directory:
+Click on link [Get Dictionaries](https://drive.google.com/drive/folders/1eWKkcYSyP5aMB6O2QrD_n11SmiLxbhdO?usp=sharing) and download `3letter_words.txt`, `4letter_words.txt`, `5letter_words.txt`, `6letter_words.txt`, and `7letter_words.txt`. Then move the files to `Source` folder.
+In case you don't download those files, a pre-prepare word list (which is included in source code) will be use as backup.
+3. Get background tracks (optional)
+Click on link []() and download `Home.mp3`, `Level3.mp3`, `Level4.mp`, `Level5.mp3`, `Level6.mp3`, and `Level7.mp3`. Then move the files to `Source` folder.
+In case you don't download those files, the program will run without any sounds.
+4. Navigate to the project directory:
 Open Command Prompt or PowerShell and change your directory to where you saved the project.
 `cd path\to\MyWordle`
 ### 3. Running the Game
