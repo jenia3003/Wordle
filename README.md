@@ -6,12 +6,12 @@ MyWordle is a simple implementation of Wordle, built using Python programming la
 - **Classic Wordle Gameplay**: Guess the five-letter word in six attempts
 - **Visual Feedback**: Letters are colored to indicate if they are correct, approximate, or incorrect
 - **On-screen Keyboard**: Interact with the game using a virtual keyboard or your physical keyboard
-- **Customizable Word List**: Easily change the game's word list by modifying 5letter_words.txt
+- **Customizable Word List**: Easily change the game's word list by modifying txt data files
 - **Customizable UI**: Adjust colors and game parameters in determineFeatures_loadData.py
 
 ## How to play MyWordle
-The game gives you one secret 5-letter word and 6 attempts to guess the word, the fewer, the better.
-1. **Guess the Word**: Type a five-letter word using your keyboard or by clicking the on-screen keyboard buttons.
+The game gives you one secret word (5 options of word length) and a certain number of attempts (based on word length you chose) to guess the word, the fewer, the better.
+1. **Guess the Word**: Type a word using your keyboard or by clicking the on-screen keyboard buttons.
 2. **Submit Your Guess**: Press the "ENTER" button on the on-screen keyboard or hit the Enter key on your physical keyboard.
 3. After each guess, the game shows color hints:
 - Green: the letter is correct and in the right position
@@ -81,7 +81,7 @@ You can customize the game's appearance and some parameters by editing `determin
 
 ## Troubleshooting
 - **Word not found in dictionary** - The word you entered isn't in the provided word list.
-- **No words loaded** - Ensure `5letter_words.txt` is in the same folder as `main.py`. To make sure the game runs properly, it will use a fallback list if there's an issue.
+- **No words loaded** - Ensure `{word_length}letter_words.txt` is in the same folder as `main.py`. To make sure the game runs properly, it will use a fallback list if there's an issue.
 - **ENTER key not working** - Ensure the main window is focused when using the physical keyboard.
 - **GUI Issues**: If the window doesn't appear or looks strange, ensure your Tkinter installation is correct (it usually comes with Python). Try restarting the script.
 
